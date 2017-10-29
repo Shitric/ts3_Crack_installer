@@ -53,7 +53,7 @@ OPTIONS=("Install Teamspeak server" "Install Only crack" "Quit")
   select OPTION in "${OPTIONS[@]}"; do
     case "$REPLY" in
       1|2 ) break;;
-      5 ) errorQuit;;
+      3 ) errorQuit;;
       *) errorContinue;;
     esac
   done
